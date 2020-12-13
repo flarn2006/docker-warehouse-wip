@@ -25,7 +25,7 @@ COPY WII_NWC_1_CERT.p12 .
 RUN openssl pkcs12 -in WII_NWC_1_CERT.p12 -clcerts -nokeys -passin pass:alpine | sed -n '/BEGIN CERTIFICATE/,/END CERTIFICATE/p' > CA.crt
 RUN openssl pkcs12 -in WII_NWC_1_CERT.p12 -nocerts -passin pass:alpine -nodes -out CA.key
 
-EXPOSE 80 443 9001 9002 9003 9998 27500 27900 27901 28910 29900 29901 29920
+EXPOSE 80 443 9001 9002 9998 27500 27900 27901 28910 29900 29901 29920
 
 WORKDIR /root
 COPY start.sh .

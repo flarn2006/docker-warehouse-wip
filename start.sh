@@ -24,7 +24,7 @@ forge() {
 	cat $filename.crt CA.crt > $filename.chain.crt
 }
 
-forge nas.nintendowifi.net
+forge "*.nintendowifi.net"
 
 (
 	cd /root/dwc
