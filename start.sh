@@ -25,7 +25,6 @@ forge() {
 }
 
 forge nas.nintendowifi.net
-forge \*.gs.nintendowifi.net
 
 (
 	cd /root/dwc
