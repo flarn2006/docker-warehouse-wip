@@ -1,6 +1,3 @@
-#FROM archlinux
-#RUN yes | pacman -Sy python2{,-twisted,-zope-interface} git gcc make
-
 FROM python:2
 
 RUN apt-get update
